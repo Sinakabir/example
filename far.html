@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="far.css">
+  <script src="https://kit.fontawesome.com/eacd75c1e3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="box">
+    
+    <div class="emoji">
+      <div id="emoge">
+    <img src="poor.png">
+    <img src="bad.png">
+    <img src="okay.png">
+    <img src="good.png">
+    <img src="excellent.png">
+  </div>
+</div>
+<div class="stars">
+
+  <i class="fas fa-star"></i>
+  <i class="fas fa-star"></i>
+  <i class="fas fa-star"></i>
+  <i class="fas fa-star"></i>
+  <i class="fas fa-star"></i>
+
+</div>
+  </div>
+  <script>
+    let stars = document.getElementsByClassName('fas');
+    let emoji = document.getElementById('emoge')
+  
+    stars[0].onclick = function(){
+      stars[0].style.color = 'gold';
+      stars[1].style.color = 'grey';
+      stars[2].style.color = 'grey';
+      stars[3].style.color = 'grey';
+      stars[4].style.color = 'grey';
+      emoji.style.transform=  "translateX(0px)";
+    }
+
+    stars[1].onclick = function(){
+      stars[0].style.color = 'gold';
+      stars[1].style.color = 'gold';
+      stars[2].style.color = 'grey';
+      stars[3].style.color = 'grey';
+      stars[4].style.color = 'grey';
+      emoji.style.transform=  "translateX(-70px)";
+    }
+
+    stars[2].onclick = function(){
+      stars[2].style.color = 'gold';
+      stars[0].style.color = 'gold';
+      stars[1].style.color = 'gold';
+      stars[3].style.color = 'grey';
+      stars[4].style.color = 'grey';
+      emoji.style.transform=  "translateX(-140px)";
+    }
+
+    stars[3].onclick = function(){
+      stars[0].style.color = 'gold';
+      stars[1].style.color = 'gold';
+      stars[2].style.color = 'gold';
+      stars[3].style.color = 'gold';
+      stars[4].style.color = 'grey';
+      emoji.style.transform=  "translateX(-210px)";
+    }
+
+    stars[4].onclick = function(){
+      stars[0].style.color = 'gold';
+      stars[1].style.color = 'gold';
+      stars[2].style.color = 'gold';
+      stars[3].style.color = 'gold';
+      stars[4].style.color = 'gold';
+      emoji.style.transform=  "translateX(-280px)";
+    }
+  </script>
+</body>
+</html>

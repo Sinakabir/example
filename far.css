@@ -1,0 +1,51 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+body{
+  height: 100vh;
+  background: linear-gradient(lightblue , rgb(87, 80, 80));
+}
+.box{
+  width: 400px;
+  height: 250px;
+  background-color: white;
+  border-radius: 4px;
+  margin: 100px auto 0;
+  position: relative;
+
+}
+.emoji{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+ position: absolute;
+ top: 60px;
+ overflow: hidden;
+ right: 50%;
+ transform: translate(50%);
+ display: flex;
+ align-items: center;
+
+
+}
+.emoji img{
+  width: 60px;
+  margin-right: 10px;
+ 
+}
+.stars{
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 30px;
+  color: rgb(70, 66, 66);
+}
+#emoge{
+  display: flex;
+   transform: translateX(70px);
+   transition: 1s;
+}
